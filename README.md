@@ -11,11 +11,11 @@
 
 ### Network Topology
 
-[!TODO]()
+![TODO](https://github.com/Tamie13/Blue-Team-Summary-of-Operations/blob/main/Final%20Project%20Images/Network%20Diagram.png)
 
 The following machines were identified on the network:
-- Name of VM 1
-  - **Operating System**:
+- Kali
+  - **Operating System**: Debian Kali 5.4.0
   - **Purpose**:
   - **IP Address**:
 - Name of VM 2

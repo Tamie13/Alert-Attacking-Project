@@ -11,7 +11,7 @@
 
 ### Network Topology
 
-![TODO]()
+![TODO](https://github.com/Tamie13/Blue-Team-Summary-of-Operations/blob/main/Final%20Project%20Image%20Folder/Network%20Diagram.png)
 
 The following machines were identified on the network:
 - Kali

@@ -51,7 +51,7 @@ The following machines were identified on the network during the initial scan.
 -  Port 80/TCP Open HTTP Apache httpd 2.4.10 (Debian)
 
 
-### ALERTS & SUGGESTED MITIGATION FOR VULNERABILITIES
+## ALERTS & SUGGESTED MITIGATION FOR VULNERABILITIES
 
 -  Each alert below pertains to a specific vulnerability/exploit.
 -  The logs and alerts generated during the assessment suggest that this network is susceptible to several active threats, identified by the information generated from the alerts below. In addition to watching for occurrences of such threats, the network should be hardened against them. The Blue Team suggests that IT implement the fixes below to protect the network:
@@ -66,7 +66,7 @@ The following machines were identified on the network during the initial scan.
        -  Threshold:  IS ABOVE 400
        -  Vulnerability Mitigated:  Enumeration/Brute Force
        -  Reliability:  The alert has demonstrated highly reliability
-<img>
+<img src="https://github.com/Tamie13/Blue-Team-Summary-of-Operations/blob/main/Final%20Project%20Image%20Folder/Excessive%20HTTP%20Errors%20Alert.png" width="650" height="600">
 
 -  **Vulnerability 1** *BRUTE FORCE*
     -  Patch:
@@ -81,7 +81,7 @@ The following machines were identified on the network during the initial scan.
        -  Vulnerability Mitigated:  Code injection in HTTP requests (XSS and CRLF) or DDOS
        -  Reliability:  This alert demonstrates medium reliability, as it has produced some false positives
 
-<img>
+<img src="https://github.com/Tamie13/Blue-Team-Summary-of-Operations/blob/main/Final%20Project%20Image%20Folder/HTTP%20Reques%20Size%20Monitor%20Alert.png" width="650" height="600">
 
 -  **Vulnerability 2** *Code injection in HTTP requests (XXS and CRLF) or DDOS
     -  Patch:
@@ -96,7 +96,7 @@ The following machines were identified on the network during the initial scan.
        - Vulnerability Mitigated:  Malicious software, programs (malware or viruses) running taking up resources
        - Reliability:  The alert demonstrates high reliability
 
-<img>
+<img src="https://github.com/Tamie13/Blue-Team-Summary-of-Operations/blob/main/Final%20Project%20Image%20Folder/CPU%20Usage%20Monitor%20Alert.png" width="650" height="600">
 
 -  **Vulnerability 3** *Malicious software or program running taking up resources
     -  Patch:

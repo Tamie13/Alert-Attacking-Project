@@ -51,7 +51,7 @@ The following machines were identified on the network during the initial scan.
 -  Port 80/TCP Open HTTP Apache httpd 2.4.10 (Debian)
 
 
-## ALERTS & SUGGESTED PATCHES FOR VULNERABILITIES
+## ALERTS | VULNERABILITIES | PATCHES
 
 -  Each alert below pertains to a specific vulnerability/exploit.
 -  The logs and alerts generated during the assessment suggest that this network is susceptible to several active threats, identified by the information generated from the alerts below. In addition to watching for occurrences of such threats, the network should be hardened against them. The Blue Team suggests that IT implement the fixes below to protect the network:
@@ -68,14 +68,16 @@ The following machines were identified on the network during the initial scan.
        -  Reliability:  The alert has demonstrated highly reliability
 <img src="https://github.com/Tamie13/Blue-Team-Summary-of-Operations/blob/main/Final%20Project%20Image%20Folder/Excessive%20HTTP%20Errors%20Alert.png" width="650" height="600">
 
-#### Vulnerability 1:
-*BRUTE FORCE*
-#### Patch: 
-*WordPress Hardening Maintenance Plan*
-       -  Require regular checks and installation of updates for WordPress Core, PHP and Plugins
+**Vulnerability 1:**
+-  *BRUTE FORCE*
+
+**Patch:**
+-  *WordPress Hardening Maintenance Plan*
+    -  -  Require regular checks and installation of updates for WordPress Core, PHP and Plugins
        -  Check for and disable unused features in Wordpress
        -  Admin and login/s should not be publicly accessible
-    -  Why It Works: The number of attacks by hackers and bad actors on WordPress increases everyday.
+
+-  Why It Works: The number of attacks by hackers and bad actors on WordPress increases everyday.
 Regular maintenance to keep your WordPress site hardened is the best way to proctect against those
 attacks as well as fix bugs on the site.  It ensures your WP site is working as smoothly as possible
 and is "less likely" to be the victim of malicious attacks.

@@ -74,8 +74,8 @@ The following machines were identified on the network during the initial scan.
 **Patch:**
 -  *WordPress Hardening Maintenance Plan*
     -  -  Require regular checks and installation of updates for WordPress Core, PHP and Plugins
-       -  Check for and disable unused features in Wordpress
-       -  Admin and login/s should not be publicly accessible
+    -  -  Check for and disable unused features in Wordpress
+    -  -  Admin and login/s should not be publicly accessible
 
 -  Why It Works: The number of attacks by hackers and bad actors on WordPress increases everyday.
 Regular maintenance to keep your WordPress site hardened is the best way to proctect against those
@@ -93,14 +93,20 @@ and is "less likely" to be the victim of malicious attacks.
 
 <img src="https://github.com/Tamie13/Blue-Team-Summary-of-Operations/blob/main/Final%20Project%20Image%20Folder/HTTP%20Reques%20Size%20Monitor%20Alert.png" width="650" height="600">
 
-#### Vulnerability 2 *Code injection in HTTP requests (XXS and CRLF) or DDOS
-  ##### Patch: Harden Agaisnt DDOS / Code Injection Attacks
-     
-     -  Disable XML RPC to prevent third party apps access to your website
-     -  Disable REST API to prevent unneccessary access to your data
-     -  Activate a website application firewall
+**Vulnerability 2**
+-  *Code injection in HTTP requests (XXS and CRLF) or DDOS*
 
--  Why It Works:
+**Patch:**
+-  *Harden Agaisnt DDOS / Code Injection Attacks*
+     
+    -  -  Disable XML RPC to prevent third party apps access to your website
+    -  -  Disable REST API to prevent unneccessary access to your data
+    -  -  Activate a website application firewall that can catch DDoS
+    attack before it can make a request to your website
+
+-  Why It Works: Disabling attack vectors like XML-RPC and REST API prevents access to your WordPress site via third party vendors.
+This will mitigate small DOS attacks.  Using a website application firewall service or subscribing to a service will help to 
+catch and prevent most larger DDoS attacks.
 
 (Site referenced for DDOS hardening suggestions: https://www.wpbeginner.com/wp-tutorials/how-to-stop-and-prevent-a-ddos-attack-on-wordpress/ )
 
@@ -115,7 +121,14 @@ and is "less likely" to be the victim of malicious attacks.
 
 <img src="https://github.com/Tamie13/Blue-Team-Summary-of-Operations/blob/main/Final%20Project%20Image%20Folder/CPU%20Usage%20Monitor%20Alert.png" width="650" height="600">
 
--  **Vulnerability 3** *Malicious software or program running taking up resources
-    -  Patch:
-    -  Why It Works:
+**Vulnerability 3** 
+-  *Malicious software or program running taking up resources
 
+**Patch:**
+-  *Harden WordPress against Malware* 
+    -  - Invest in or update Antivirus Software
+    -  - Leave shared hosting and consider cloud based service or other affordable options
+    -  - Use Host Based and Network Based Intrusion Detection systems
+
+-  Why It Works:  The job of anti-virus software is to detect, remove and prevent the use of malicious software or other threats against computers.
+Utilizing both HIDS and NIDS to protect your system is a solid security regiment.  They work together and provide real-time data packets for monitoring/setting alerts, make it easier to identify patterns that alerts might miss via a real-time detection system.  Early detection means more ability to stop malicious software or programs from hijacking your system.

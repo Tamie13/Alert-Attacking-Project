@@ -58,8 +58,7 @@ The following machines were identified on the network during the initial scan.
 
 -  Traffic to these services should be carefully monitored. To this end, we have implemented the alerts below:
 
-#### ALERT 1
--  Excessive HTTP Errors
+#### ALERT 1 - Excessive HTTP Errors
 
     -  WHEN count() GROUPED OVER top 5 'http.response.status_code' IS ABOVE 400 FOR THE LAST 5 minutes
 
@@ -73,8 +72,7 @@ The following machines were identified on the network during the initial scan.
     -  Patch:
     -  Why It Works:
 
-#### ALERT 2
--  HTTP Request Size Monitor
+#### ALERT 2 - HTTP Request Size Monitor
 
     -  WHEN sum() of http.request.bytes OVER all documents IS ABOVE 3500 FOR THE LAST 1 minute
 
@@ -89,8 +87,7 @@ The following machines were identified on the network during the initial scan.
     -  Patch:
     -  Why It Works:
     -  
-#### ALERT 3
--  CPU Usage Monitor
+#### ALERT 3 - CPU Usage Monitor
 
     -  WHEN max() OF system.process.cpu.total.pct OVER all documents IS ABOVE 0.5 FOR THE LAST 5 minutes
 

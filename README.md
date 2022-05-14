@@ -42,7 +42,7 @@ The following machines were identified on the network during the initial scan.
 ### Description of Targets
 
 -  The target of this attack was Target 1 (192.168.1.110)
--  Target 1 is an Apache web server and has SSH enabled, so ports 80 and 22 are potential points of entry, which was verified by the nmap scan below
+-  Target 1 is an Apache web server and is SSH enabled, so ports 80 and 22 are potential points of entry, which was verified by the nmap scan below
 
 #### Monitoring the Targets
 **Target 1**
@@ -51,7 +51,7 @@ The following machines were identified on the network during the initial scan.
 -  Port 80/TCP Open HTTP Apache httpd 2.4.10 (Debian)
 
 
-## ALERTS & SUGGESTED MITIGATION FOR VULNERABILITIES
+## ALERTS & SUGGESTED PATCHES FOR VULNERABILITIES
 
 -  Each alert below pertains to a specific vulnerability/exploit.
 -  The logs and alerts generated during the assessment suggest that this network is susceptible to several active threats, identified by the information generated from the alerts below. In addition to watching for occurrences of such threats, the network should be hardened against them. The Blue Team suggests that IT implement the fixes below to protect the network:
@@ -69,8 +69,14 @@ The following machines were identified on the network during the initial scan.
 <img src="https://github.com/Tamie13/Blue-Team-Summary-of-Operations/blob/main/Final%20Project%20Image%20Folder/Excessive%20HTTP%20Errors%20Alert.png" width="650" height="600">
 
 -  **Vulnerability 1** *BRUTE FORCE*
-    -  Patch:
-    -  Why It Works:
+    -  Patch: WordPress Hardening Maintenance Plan
+       -  Require regular checks and installation of updates for WordPress Core, PHP and Plugins
+       -  Check for and disable unused features in Wordpress
+       -  Admin and login/s should not be publicly accessible
+    -  Why It Works: The number of attacks by hackers and bad actors on WordPress increases everyday.
+Regular maintenance to keep your WordPress site hardened is the best way to proctect against those
+attacks as well as fix bugs on the site.  It ensures your WP site is working as smoothly as possible
+and is "less likely" to be the victim of malicious attacks.
 
 #### ALERT 2 - HTTP Request Size Monitor
 
@@ -84,9 +90,14 @@ The following machines were identified on the network during the initial scan.
 <img src="https://github.com/Tamie13/Blue-Team-Summary-of-Operations/blob/main/Final%20Project%20Image%20Folder/HTTP%20Reques%20Size%20Monitor%20Alert.png" width="650" height="600">
 
 -  **Vulnerability 2** *Code injection in HTTP requests (XXS and CRLF) or DDOS
-    -  Patch:
+    -  Patch: Harden Agaisnt DDOS / Code Injection Attacks
+       -  Disable XML RPC to prevent third party apps access to your website
+       -  Disable REST API to prevent unneccessary access to your data
+       -  Activate a website application firewall
     -  Why It Works:
-    -  
+
+(Site referenced for DDOS hardening suggestions: https://www.wpbeginner.com/wp-tutorials/how-to-stop-and-prevent-a-ddos-attack-on-wordpress/ )
+
 #### ALERT 3 - CPU Usage Monitor
 
     -  WHEN max() OF system.process.cpu.total.pct OVER all documents IS ABOVE 0.5 FOR THE LAST 5 minutes

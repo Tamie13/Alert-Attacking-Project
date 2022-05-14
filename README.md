@@ -82,7 +82,7 @@ Regular maintenance to keep your WordPress site hardened is the best way to proc
 attacks as well as fix bugs on the site.  It ensures your WP site is working as smoothly as possible
 and is "less likely" to be the victim of malicious attacks.
 
-#### ALERT 2 - HTTP Request Size Monitor
+#### ALERT 2: HTTP Request Size Monitor
 
     -  WHEN sum() of http.request.bytes OVER all documents IS ABOVE 3500 FOR THE LAST 1 minute
 
@@ -93,7 +93,7 @@ and is "less likely" to be the victim of malicious attacks.
 
 <img src="https://github.com/Tamie13/Blue-Team-Summary-of-Operations/blob/main/Final%20Project%20Image%20Folder/HTTP%20Reques%20Size%20Monitor%20Alert.png" width="650" height="600">
 
-**Vulnerability 2**
+**Vulnerability 2:**
 -  *Code injection in HTTP requests (XXS and CRLF) or DDOS*
 
 **Patch:**
@@ -110,7 +110,7 @@ catch and prevent most larger DDoS attacks.
 
 (Site referenced for DDOS hardening suggestions: https://www.wpbeginner.com/wp-tutorials/how-to-stop-and-prevent-a-ddos-attack-on-wordpress/ )
 
-#### ALERT 3 - CPU Usage Monitor
+#### ALERT 3: CPU Usage Monitor
 
     -  WHEN max() OF system.process.cpu.total.pct OVER all documents IS ABOVE 0.5 FOR THE LAST 5 minutes
 
@@ -121,7 +121,7 @@ catch and prevent most larger DDoS attacks.
 
 <img src="https://github.com/Tamie13/Blue-Team-Summary-of-Operations/blob/main/Final%20Project%20Image%20Folder/CPU%20Usage%20Monitor%20Alert.png" width="650" height="600">
 
-**Vulnerability 3** 
+**Vulnerability 3:** 
 -  *Malicious software or program running taking up resources
 
 **Patch:**

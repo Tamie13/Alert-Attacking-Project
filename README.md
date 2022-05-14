@@ -68,8 +68,10 @@ The following machines were identified on the network during the initial scan.
        -  Reliability:  The alert has demonstrated highly reliability
 <img src="https://github.com/Tamie13/Blue-Team-Summary-of-Operations/blob/main/Final%20Project%20Image%20Folder/Excessive%20HTTP%20Errors%20Alert.png" width="650" height="600">
 
-#### Vulnerability 1 *BRUTE FORCE*
-#### Patch: WordPress Hardening Maintenance Plan
+#### Vulnerability 1:
+*BRUTE FORCE*
+#### Patch: 
+*WordPress Hardening Maintenance Plan*
        -  Require regular checks and installation of updates for WordPress Core, PHP and Plugins
        -  Check for and disable unused features in Wordpress
        -  Admin and login/s should not be publicly accessible
@@ -91,6 +93,7 @@ and is "less likely" to be the victim of malicious attacks.
 
 #### Vulnerability 2 *Code injection in HTTP requests (XXS and CRLF) or DDOS
   ##### Patch: Harden Agaisnt DDOS / Code Injection Attacks
+     
      -  Disable XML RPC to prevent third party apps access to your website
      -  Disable REST API to prevent unneccessary access to your data
      -  Activate a website application firewall
